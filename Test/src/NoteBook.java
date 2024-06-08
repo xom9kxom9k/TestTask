@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Класс записной книжки
  */
 public class NoteBook {
-    static String file = "src/notebook.txt";
+    static String file = "src/example/notebook.txt";
     static DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     /**
