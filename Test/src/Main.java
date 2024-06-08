@@ -21,7 +21,7 @@ public class Main {
                     NoteBook.writeEntry(sc);
                     break;
                 default:
-                    System.out.println("Неизвестная команда, пожалуйста введите команду из спика выше");
+                    System.out.println("Неизвестная команда, пожалуйста введите команду из списка выше");
             }
         }
     }
