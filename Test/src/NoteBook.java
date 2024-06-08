@@ -16,10 +16,10 @@ public class NoteBook {
      */
     public static void readEntry() {
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
-            if (file == null) {
-                System.out.println("Записная книжка пуста");
-            }
             String line = reader.readLine();
+            if (line.isEmpty()) {
+                System.out.println("Записная книжка пуста\n");
+            }
             while (line != null) {
                 System.out.println(line);
                 line = reader.readLine();
@@ -41,7 +41,7 @@ public class NoteBook {
             writer.write(entry);
             writer.append("\n");
         } catch (IOException e) {
-            System.out.println("Ошибка в запси файла");
+            System.out.println("Ошибка в записи файла");
         }
     }
 }
